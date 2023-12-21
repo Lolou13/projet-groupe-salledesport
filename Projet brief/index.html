@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Salle de sport</title>
+</head>
+<body>
+  <!-- Le header est composé du caroussel et de la nav bar -->
+    <header>
+      <!-- Le caroussel -->
+        <div id="carouselExampleCaptions" class="carousel slide bg-black">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active circle" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="circle" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="circle" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/slider/slide_1.jpg" class="d-block w-100" alt="3 amies au sport">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>2 INSCRIPTIONS SIMULTANEES = UN 3eme ABONNEMENT DE 6 MOIS OFFERT !</h5>
+               <button class="infos">PLUS D'INFOS</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slider/slide_2.jpg" class="d-block w-100" alt="velos elliptiques">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>2 INSCRIPTIONS SIMULTANEES = UN 3eme ABONNEMENT DE 6 MOIS OFFERT !</h5>
+                <button class="infos">PLUS D'INFOS </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slider/slide_3.jpg" class="d-block w-100" alt="une femme fait des exercices avec une corde">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>2 INSCRIPTIONS SIMULTANEES = UN 3eme ABONNEMENT DE 6 MOIS OFFERT !</h5>
+                <button class="infos">PLUS D'INFOS </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- La navbar -->
+          <nav class="navbar navbar-expand-xl position-absolute top-0 start-0 w-100 h-50px p-0">
+            <div class="container-fluid h-100 p-0">
+              <!-- logo de la navbar-->
+              <a class="navbar-brand ps-2 pe-5" href="index.html"><img class="h-50px" src="images/logo.png" alt="logo"></a>
+              <button class="navbar-toggler h-100" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between h-md-100" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 h-100 px-2 ">
+                  <li class="nav-item py-3">
+                    <!-- debut des menu ( il y a 1 menu deroulant )-->
+                    <a class="nav-link active text-white" aria-current="page" href="index.html">L'EQUIPE</a>
+                  </li>
+                  <li class="nav-item dropdown py-3">
+                    <a class="nav-link dropdown-toggle text-white" href="page404.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      LES ACTIVITES <!-- menu deroulant -->
+                    </a>
+                    <ul class="dropdown-menu bg-black">
+                      <li><a class="dropdown-item text-white" href="page404.html">LE CYCLING</a></li>
+                      <li><a class="dropdown-item text-white" href="presentation.html">LE TRAINING FONCTIONNEL</a></li>
+                      <li><a class="dropdown-item text-white" href="page404.html">LE CROSSFIT</a></li>
+                      <li><a class="dropdown-item text-white" href="page404.html">LE PERSONNAL TRAINING-COACH PERSONNEL</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item py-3"> <!-- menu classique (x4)-->
+                    <a class="nav-link text-white" href="page404.html">NOS OFFRES</a>
+                  </li>
+                  <li class="nav-item py-3">
+                    <a class="nav-link text-white" href="page404.html">PLANNING</a>
+                  </li>
+                  <li class="nav-item py-3">
+                    <a class="nav-link text-white" href="page404.html">LE BLOG</a>
+                  </li>
+                  <li class="nav-item py-3">
+                    <a class="nav-link text-white" href="contact.html">CONTACT</a>
+                  </li>
+                </ul>
+                <span class="contact text-white px-2">
+                  <i class="fa-solid fa-mobile-screen-button"></i> 05 59 47 84 18
+                </span>
+                  <div id="reseaux" class="d-flex">
+                      <a class="nav-link text-white p-1" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                      <a class="nav-link text-white p-1" href="https://www.instagram.com
+                      "><i class="fa-brands fa-square-instagram"></i></a>
+                      <a class="nav-link text-white p-1" href="https://www.tiktok.com
+                      "><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                    <span class="en text-white px-2"><b><u>EN</u></b></span>
+              </div>
+            </div>
+          </nav>
+      </header>
+      <main>
+        <!-- 1er paragraphe -->
+        <section class="container-md w-66 m-auto my-5">
+            <div class="container-lg m-auto text-center">
+                <h4 class="fw-bold">LE STUDIO SPORT & COACHING,<br>
+                    SALLE DE SPORT, FITNESS ET CROSSFIT À BIARRITZ
+                </h4>
+                <img src="images/bg_titre.jpg" alt="trait dore">
+            </div>
+            <div class="container-md mt-5 text-center text-sm-start">
+                <p>
+                    Aujourd'hui beaucoup de salles de sport vendent des abonnements où vous avez accès à tous les
+                    services
+                    du
+                    club(cours collectifs, plateau musculation...) mais combien vous
+                    connaissent au point de connaitre vos objectifs et de savoir si vous êtes en bonne voie pour les
+                    atteindres?
+                </p>
+                <p>
+                    Beaucoup de gens estiments être livrés à eux même dans ce genre de salle.Nous avons choisi la
+                    direction
+                    diamétralement opposée !Notre seule priorité? La qualité du Service.
+                    Notre nouveau concept de salle de sport SUR MESURE trouve une solution adaptée à votre budget et vos
+                    disponibilités.Nous oeuvrons pour créer une ambiance conviviale
+                    tout en vous aidant à vous dépasser dans l'effort et ce, pour maximiser vos chances d'obtenir des
+                    résultats.Les sportifs de Haut-Niveau ont des entraîneurs et des préparateurs physiques pour
+                    atteindre
+                    leurs
+                    objectifs.Alors, pourquoi pas vous?
+                </p>
+                <!-- derniere phrase -->
+                <div class="container text-center">
+                    <p> Vous voulez plus de Motivation, plus de Résultats, plus vite... <strong>Alors bienvenue au
+                            Studio Sport & Coaching!</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- 2eme paragraphe -->
+        <section class="container-fluid">
+            <div class="container m-auto text-center mt-5">
+                <h4 class="fw-bold text-uppercase"> LES ACTIVITÉS PROPOSÉES AU STUDIO SPORT BIARRITZ</h4>
+                <img src="images/bg_titre.jpg" alt="trait dore">
+            </div>
+            <!-- 4 cards partie 1 / activités (gutter o)-->
+            <div class="card text-center border-0 mt-3">
+                <div class="row">
+                    <div class="col-0 col-sm-6 col-lg-3 g-0 position-relative h-100">
+                        <!-- rounded-0 = border radius -->
+                        <img class="card-img rounded-0 img-fluid" src="images/activites/bg_activite_1.jpg"
+                            alt="femme qui fait des tractions">
+                        <div class="position-absolute top-50 start-50 translate-middle text-light w-100 h-md-50 p-2">
+                            <img class="w-15" src="images/activites/icon_poids.png" alt="poids">
+                            <h5 class="card-title text-uppercase  fs-6">PERSONNAL TRAINING</h5>
+                            <p class="card-text">Le service 100% individualisé et adapté à vos disponibilités, votre
+                                condition physique et vos objectifs.</p>
+                            <p class="card-link position-relative"><small>En savoir plus</small></p>
+                        </div>
+                    </div>
+                    <div class="col-0 col-sm-6 col-lg-3 g-0 position-relative h-100">
+                        <img class="card-img rounded-0 img-fluid" src="images/activites/bg_activite_2.jpg"
+                            alt="femmes à velo">
+                        <div class="position-absolute top-50 start-50 translate-middle text-light w-100 h-md-50 p-2">
+                            <img class="w-15" src="images/activites/icon_velo.png" alt="altere">
+                            <h5 class="card-title text-uppercase  fs-6">CYCLING</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                               tempor et dolore magna aliquas ametus.</p>
+                            <p class="card-link position-relative"><small>En savoir plus</small></p>
+                        </div>
+                    </div>
+                    <div class="col-0 col-sm-6 col-lg-3 g-0 position-relative h-100">
+                        <img class="card-img rounded-0 img-fluid" src="images/activites/bg_activite_3.jpg" alt="...">
+                        <div class="position-absolute top-50 start-50 translate-middle text-light w-100 h-md-50 p-2">
+                            <img class="w-15" src="images/activites/icon_corde.png" alt="corde">
+                            <h5 class="card-title text-uppercase fs-6">TRAINING FONCTIONNEL</h5>
+                            <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                               tempor et dolore magna aliquas ametus.</p>
+                            <p class="card-link position-relative"><small>En savoir plus</small></p>
+                        </div>
+                    </div>
+                    <div class="col-0 col-sm-6 col-lg-3 g-0 position-relative h-100">
+                        <img class="card-img rounded-0 img-fluid" src="images/activites/bg_activite_4.jpg" alt="...">
+                        <div class="position-absolute top-50 start-50 translate-middle text-light w-100 h-md-50 p-2">
+                            <img class="w-15" src="images/activites/icon_alter.png" alt="altere">
+                            <h5 class="card-title text-uppercase  fs-6">CROSSFIT</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                               tempor et dolore magna aliquas ametus.</p>
+                            <p class="card-link position-relative"><small>En savoir plus</small></p>
+                            <!-- trait blanc effet hover? -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  partie 2 "dernieres actualités" = 3 cards et un titre = section   -->
+        <!-- permet de contenir les 3 photos -->
+        <section class="container-md w-66 m-auto">
+            <!-- titre -->
+            <div class="text-center text-uppercase mt-5">
+                <h4 class="fw-bold">NOS DERNIERES ACTUALITÉS</h4>
+                <img src="images/bg_titre.jpg" alt="trait dore">
+            </div>
+            <!-- 3 cards -->[]
+            <!-- div grand-parent row-cols-3 = 3 colonnes /row-cols-md-3 format au dessus de la tablette = md= gros tel 3 colonnes -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 mx-0 mx-md-5">
+                <!-- div parent cards 1-->
+                <div class="col">
+                    <!-- div enfant -->
+                    <div class="card border-0">
+                        <img src="images/actualites/RAISINS.webp" class="card-img-top rounded-0" alt="Raisins">
+                        <!-- div enfant -->
+                        <!-- texte -->
+                        <div class="card-body">
+                            <p class="fw-bold">28 Octobre 2018</p>
+                            <h4 class="card-title text-uppercase fw-bold">TITRE DE L'ACTUALITÉ SUR UNE OU DEUX LIGNES EN MAJUSCULES</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alique veniam ...</p>
+                            <p class="card-link2 fw-bold text-decoration-none text-black text-uppercase position-relative">LIRE LA SUITE</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- div parent cards 2 -->
+                <div class="col">
+                    <!-- div enfant -->
+                    <div class="card border-0">
+                        <img src="images/actualites/COACH.png" class="card-img-top rounded-0" alt="4 coachs">
+                        <!-- div enfant -->
+                        <!-- texte -->
+                        <div class="card-body">
+                            <p class="fw-bold">28 Octobre 2018</p>
+                            <h4 class="card-title text-uppercase fw-bold">TITRE DE L'ACTUALITÉ SUR UNE OU DEUX LIGNES EN MAJUSCULES</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alique veniam ...</p>
+                            <p class="card-link2 fw-bold text-decoration-none text-black text-uppercase position-relative">LIRE LA SUITE</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- div parent cards 3 -->
+                <div class="col">
+                    <!-- div enfant -->
+                    <div class="card border-0">
+                        <img src="images/actualites/CARDIO.png" class="card-img-top rounded-0"
+                            alt="compteur de velo">
+                        <!-- div enfant -->
+                        <!-- texte -->
+                        <div class="card-body">
+                            <p class="card-title text-uppercase fw-bold">28 Octobre 2018</p>
+                            <h4 class="card-title text-uppercase fw-bold">TITRE DE L'ACTUALITÉ SUR UNE OU DEUX LIGNES EN MAJUSCULES</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alique veniam ...</p>
+                            <p class="card-link2 fw-bold text-decoration-none text-black text-uppercase position-relative">LIRE LA SUITE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--  debut du footer -->
+    <footer class="bg-footer containe-fluid">
+      <div class="container text-center mb-5">
+        <!-- titre avec trait doré-->
+        <h3 class="pt-5 text-uppercase">studio sport & coaching, nos partenaires</h3> 
+        <img src="images/bg_titre.jpg" alt="" >
+        <p>en tant que menbre du studio sport & coaching vous bénéficierez dans ces etablissement d'avantages exclusif,<a href="page404.html" class="text-gold"><u> cliquez ici </u></a>pour en savoir plus.</p>
+      </div>
+      <!--container partenaire-->
+      <div class="container-fluid">
+        <div class="row align-items-center row-cols-5 w-75 m-auto">
+          <img class="img-fluid" src="images/partenaires/mini.png" alt="logo mini">
+          <img class="img-fluid" src="images/partenaires/massage.png" alt="logo massage">
+          <img class="img-fluid" src="images/partenaires/tellechea.png" alt="logo tellechea">
+          <img class="img-fluid" src="images/partenaires/ocean.png" alt="logo ocean">
+          <img class="img-fluid" src="images/partenaires/decathlon.png" alt="logo decathlon">
+        </div>
+      </div>
+      <!--container coach-->
+        <div class="card-group my-5">
+          <div class="card g-0 border-0 m-0 p-0">
+            <img class="h-100" src="images/coach/coach_1.jpg" alt="un coach">
+          </div>
+          <div class="card g-0 border-0 m-0 p-0">
+            <img class="h-100" src="images/coach/coach_2.jpg" alt="un coach">
+          </div>
+          <div  class="card g-0 border-0 m-0 p-0">
+            <img class="h-100" src="images/coach/coach_3.jpg" alt="un coach">
+          </div>
+          <div class="card g-0 border-0 m-0 p-0">
+            <img class="h-100" src="images/coach/elise-coach-biarritz-salle-de-sport.jpg" alt="coach elise">
+          </div>
+          <div class="card g-0 border-0 m-0 p-0">
+            <img class="h-100" src="images/coach/julie-coach-fitness-biarritz.jpg" alt="coach julie">
+          </div>
+      </div>  
+      
+      <!--container info x3-->
+
+      <!--1-->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col">
+          <h5 class="fs-res"><img src="images/logo_footer.png" alt="logo de la salle de sport"> A PROPOS</h5>
+            <p class="m-0"><b>2018 c Studio Sport Biarritz</b></p>
+            <p class="m-0">Salle de sport, de fitness</p>
+            <p class="m-0">à Biarritz pays Basques</p>
+            <p class="m-0">RCS : 000 000 000</p>
+            <p class="m-0"><a href="page404.html"><u>Mentions légales</u></a></p>
+        </div>
+
+         <!--2-->
+        <div class="col">
+          <h5 class="py-3 text-uppercase fs-res">Studio Sport Corporate</h5>
+          <ul>
+            <li class="line">Studio Center créer votre studio <a href="page404.html"></a></li>
+           <li class="line">Offres Speciales C.E.  <a href="page404.html"></a></li>
+            <li class="line">Devenir partenaire <a href="page404.html"></a></li>
+          </ul>
+        </div>
+         <!--3-->
+        <div class="col-md-6">
+          <h5 class="py-3 text-uppercase fs-res">fitness crossfit & training aux pays basques</h5>
+          <p><a href="page404.html">coach personnel de sport à Biarritz</a>, <a href="page404.html">coach personnel de sport a anglet</a>, <a href="page404.html">salle de sport BAB</a>, <a href="page404.html">fitness à Biarritz</a>, <a href="page404.html">session de fitness a anglet</a>, <a href="page404.html">fitness sur le BAB</a>, <a href="page404.html">autre mot clé + ville</a>, <a href="page404.html">autre mot clé + ville</a>, <a href="page404.html">autre mot clé + ville</a></p>
+        </div>
+      </div>
+    </div>
+         <!--bas du footer (364) -->
+        <div class="containe-fluid bg-dark">
+          <div class="d-flex justify-content-center align-items-center">
+             <p class="pt-2 pe-2 text-end">un site crée par <br><strong>L'AGENCE 364 COM</strong></p>
+             <img src="images/364.png" alt="">
+           </div>
+        </div>
+</footer>
+ <!--fin du footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

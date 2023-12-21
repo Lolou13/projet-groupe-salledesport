@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbarSupportedContent {
+    margin-top: -20px;
+}
+
+ /* l'icone burger en blanc */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
+}
+
+/*navbar et menu deroulant */
+nav .navbar-nav li:hover{
+    background-color: rgb(217, 172, 76);
+}
+
+nav ul li .dropdown-item:hover {
+    background-color: black!important;
+    color:rgb(217, 172, 76)!important;
+}
+
+/* sizing */
+.h20 {
+    height: 20%;
+}
+.h20px {
+    height: 200px;
+}
+.w-15 {
+    width: 15%;
+}
+.w-23 {
+    width: 23%;
+}
+.w-34 {
+    width: 34%;
+}
+.w-66 {
+    width: 66%;
+}
+.mt--1 {
+    margin-top: -8px;
+}
+/* boutons "radio" du slider */
+.circle {
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50% !important;
+    background-color: rgba(240, 248, 255, 0)!important;
+    border: 1px solid white!important;
+}
+.circle.active{
+    background-color: white!important;
+}
+
+/* informations presentes sur le slider */
+.infos {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    color: white;
+    font-size: small;
+    padding:10px 14px;
+}
+.carousel-caption {
+    top: 55%;
+}
+.carousel-caption button {
+    margin: 9%;
+}
+
+/* trait "en savoir plus" */
+.card-link::after{
+    content:"";
+    border: solid white 1px;
+    width: 20px;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+}
+.card-link:hover::after{
+    width: 100px; 
+}
+
+/* trait "Lire la suite" */
+/* CARd LIEN 2 : content (ligne) border(style) longeur (static) bottom left  (position par rapport au texte) transtion  (vitesse de l'animation) */
+.card-link2::after{
+    content:"";
+    border: solid black 1px;
+    width: 30px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+/* card lien 2 : effet (hover) après le clique, longueur du trait */
+.card-link2:hover::after{
+    width: 80px; 
+}
+
+/* PAGE ERREUR 404 */
+.bg-gold{
+    background-color: rgb(217, 172, 76);
+}
+.text-gold{
+    color: rgb(217, 172, 76);
+}
+.btn-gold{
+    background: rgb(217, 172, 76)!important;
+}
+
+ /* formulaire */
+
+ /* longueur nos coordonnées */
+ .w-40{
+    width: 40% !important;
+}
+/* label */
+.bg-grey{
+    background-color: rgb(233, 233, 233) !important;
+}
+/* input */
+.btn-gold{
+    background: goldenrod!important;
+}
+
+.fs-res {
+    font-size :calc(0.8rem + 0.5vw);
+}
+.p-20 {
+    padding: 20px!important;
+}
+
+
+
+/**************************************** Le footer *************************************************/
+
+ /* definition couleur blanche  et hover doré des liens et ligne  */
+
+footer a{     
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: rgb(217, 172, 76);
+}
+.line::before {
+    content:"";
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    left: -10px;
+    border-bottom: 2px solid white;
+    width: 25px;
+}
+.line:hover::before{
+    border-color: #CBAC6B;
+}
+
+/*couleur du footer */
+.bg-footer {
+    background-color: rgb(45, 44, 44);
+    color: white;
+}
+
+/************************************************/
+
+
+
+/*************map ********/
+iframe{
+    width: 100%;
+}
+
+
+
+/* responsive */
+@media screen and (max-width: 1200px){
+
+.carousel, .banniere {
+    padding-top: 90px!important;
+}
+
+.navbar-nav {
+    background-color: black;
+}
+
+.circle, .contact, #reseaux, .en {
+    display: none!important;
+}
+
+}
